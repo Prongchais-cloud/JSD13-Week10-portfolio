@@ -7,11 +7,11 @@ export const profile = {
   location: "Thailand",
   tagline: "Aspiring Software Developer | Transitioning into Tech",
   // TODO: Replace with your real email address
-  email: "hello@example.com",
+  email: "prongchais@gmail.com",
   // TODO: Replace with your real GitHub username
-  github: "https://github.com/username",
+  github: "https://github.com/Prongchais-cloud",
   // TODO: Replace with your real LinkedIn profile URL
-  linkedin: "https://www.linkedin.com/in/username",
+  linkedin: "https://www.linkedin.com/in/supakit-prongchai/",
 };
 
 export const navLinks = [
