@@ -25,8 +25,8 @@ export default function Hero() {
       {/* Subtext — Geist 400, 18px, fog */}
       <p className="mb-10 max-w-[37.5rem] text-body-lg leading-normal text-fog-text">
         I'm Por — learning full-time, self-directed, and building hands-on
-        projects in web development with an eye toward data engineering and
-        AI/ML roles in the Thai job market.
+        projects in web development with an eye toward Full Stack Developer and
+        Backend Developer roles in the Thai and International job market.
       </p>
 
       {/* CTAs */}

@@ -6,11 +6,8 @@ export const profile = {
   name: "Por",
   location: "Thailand",
   tagline: "Aspiring Software Developer | Transitioning into Tech",
-  // TODO: Replace with your real email address
   email: "prongchais@gmail.com",
-  // TODO: Replace with your real GitHub username
   github: "https://github.com/Prongchais-cloud",
-  // TODO: Replace with your real LinkedIn profile URL
   linkedin: "https://www.linkedin.com/in/supakit-prongchai/",
 };
 
@@ -21,15 +18,13 @@ export const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const heroMeta = ["React", "Node.js", "Airflow", "dbt"];
+export const heroMeta = ["API"];
 
 export const goals = [
   "Actively studying toward a first software developer role",
-  "Long-term: data engineering and AI/ML career paths",
+  "Long-term: Full Stack Developer, Backend Developer paths",
   "Self-directed discipline — learning in public, shipping weekly",
 ];
-
-export const companies = ["SCB Tech", "Agoda", "Grab", "PTT Digital"];
 
 export const skillGroups = [
   {
@@ -67,9 +62,7 @@ export const skillGroups = [
     icon: "book",
     tint: "green",
     items: [
-      "React / Node.js ecosystem",
-      "Data engineering tooling — Airflow, dbt",
-      "Cloud platforms",
+      "API",
     ],
   },
 ];
@@ -90,7 +83,6 @@ export const projects = [
       "A frontend web app that fetches and displays Pokémon data from the public PokeAPI — built to practice component-based UI design, data fetching, state management, and debugging real-world API responses.",
     highlights:
       "Practical debugging techniques · data flow between components · working with a third-party REST API",
-    // TODO: Add your GitHub repo / live demo link
     link: "#",
   },
   {
@@ -101,7 +93,6 @@ export const projects = [
       "A module-based project that fetches data from a public animal API and exports it for use elsewhere in an application.",
     highlights:
       ".env files & API key security · ES Modules vs. CommonJS · async data export patterns",
-    // TODO: Add your GitHub repo link
     link: "#",
   },
   {
@@ -112,7 +103,6 @@ export const projects = [
       "A hand-built responsive website exploring semantic HTML, a responsive navbar with a hamburger menu for mobile, and modern CSS layout techniques.",
     highlights: "Semantic elements · Flexbox/Grid layout · rem units",
     note: "you're looking at it",
-    // TODO: Add your GitHub repo / live demo link
     link: "#",
   },
 ];
@@ -120,6 +110,4 @@ export const projects = [
 export const contactPills = [
   { label: "Open to opportunities", dot: "lime" },
   { label: "Thailand · UTC+7", dot: "violet" },
-  { label: "Learning in public", dot: "pink" },
-  { label: "Data Engineering · AI/ML", dot: "green" },
 ];

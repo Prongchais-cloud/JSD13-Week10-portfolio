@@ -1,4 +1,4 @@
-import { learningPills, skillGroups } from "../data/portfolio.js";
+import { skillGroups } from "../data/portfolio.js";
 import { useReveal } from "../hooks/useReveal.js";
 import { skillIcons } from "./Icons.jsx";
 
@@ -20,7 +20,6 @@ const DOT_COLORS = {
 export default function Skills() {
   const headRef = useReveal();
   const gridRef = useReveal();
-  const pillsRef = useReveal();
 
   return (
     <section
@@ -71,27 +70,6 @@ export default function Skills() {
             </article>
           );
         })}
-      </div>
-
-      {/* Currently-learning pills */}
-      <div
-        ref={pillsRef}
-        className="reveal border-t border-steel-border pt-8"
-      >
-        <p className="mb-4 font-geist-mono text-caption text-fog-text">
-          <span className="text-fog-text">{"// currently_learning:"}</span>
-        </p>
-        <ul className="flex flex-wrap gap-3">
-          {learningPills.map((pill) => (
-            <li key={pill.label} className="pill">
-              <span
-                className={`h-2 w-2 rounded-full ${DOT_COLORS[pill.dot]}`}
-                aria-hidden="true"
-              />
-              {pill.label}
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import { companies, goals } from "../data/portfolio.js";
+import { goals } from "../data/portfolio.js";
 import { useReveal } from "../hooks/useReveal.js";
 
 /* Syntax-highlighted intro snippet — Ink Well surface, mono locked at 14px */
@@ -34,27 +34,22 @@ function CodePane() {
           <span className="text-loop-green">Developer</span> = {"{"}
           {"\n  "}
           <span className="text-tag-magenta">name</span>:{" "}
-          <span className="text-syntax-pink">"Por"</span>,
+          <span className="text-syntax-pink">"Supakit Prongchai"</span>,
           {"\n  "}
           <span className="text-tag-magenta">location</span>:{" "}
           <span className="text-syntax-pink">"Thailand"</span>,
           {"\n  "}
           <span className="text-tag-magenta">role</span>:{" "}
           <span className="text-syntax-pink">
-            "Aspiring Software Developer"
+            "Aspiring Junior Software Developer"
           </span>
           ,
           {"\n  "}
           <span className="text-tag-magenta">stack</span>: [
-          <span className="text-syntax-pink">"HTML"</span>,{" "}
-          <span className="text-syntax-pink">"CSS"</span>,{" "}
-          <span className="text-syntax-pink">"JavaScript"</span>,{" "}
-          <span className="text-syntax-pink">"React"</span>],
+          <span className="text-syntax-pink">"MERN Stack"</span>],
           {"\n  "}
           <span className="text-tag-magenta">learning</span>: [
-          <span className="text-syntax-pink">"Node.js"</span>,{" "}
-          <span className="text-syntax-pink">"Airflow"</span>,{" "}
-          <span className="text-syntax-pink">"dbt"</span>],
+          <span className="text-syntax-pink">"API"</span>],
           {"\n  "}
           <span className="text-tag-magenta">openToWork</span>:{" "}
           <span className="text-loop-green">true</span>,
@@ -77,7 +72,6 @@ export default function About() {
   const headRef = useReveal();
   const paneRef = useReveal();
   const copyRef = useReveal();
-  const stripRef = useReveal();
 
   return (
     <section id="about" className="container-page py-24 max-[75rem]:py-20">
@@ -108,11 +102,11 @@ export default function About() {
             currently focused on building foundational programming skills,
             with an eye toward{" "}
             <strong className="font-medium text-bone-text">
-              data engineering
+              Full Stack Developer
             </strong>{" "}
             and{" "}
-            <strong className="font-medium text-bone-text">AI/ML</strong>{" "}
-            roles in the Thai job market.
+            <strong className="font-medium text-bone-text">Backend Developer</strong>{" "}
+            roles in the Thai and International job market.
           </p>
           <p className="mb-6 text-body text-fog-text">
             Learning full-time and self-directed, with hands-on project work
@@ -131,26 +125,6 @@ export default function About() {
             ))}
           </ul>
         </div>
-      </div>
-
-      {/* Logo strip — companies band */}
-      <div
-        ref={stripRef}
-        className="reveal border-t border-steel-border pt-12 text-center"
-      >
-        <p className="mb-6 font-geist-mono text-caption text-fog-text">
-          Companies I'm aiming for
-        </p>
-        <ul className="flex flex-wrap justify-center gap-x-12 gap-y-8">
-          {companies.map((company) => (
-            <li
-              key={company}
-              className="font-satoshi text-subheading font-medium tracking-[0.025em] text-ash-text opacity-75 transition-opacity hover:opacity-100"
-            >
-              {company}
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );
